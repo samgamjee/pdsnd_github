@@ -20,19 +20,19 @@ def get_filters():
             print("Oops,please review your answer. Make sure you typed one of the cities listed.\n")
             continue
         else:
-            month = str(input("Would you like to see data for a specific month? If yes,type the month name (ie.january).You can also type 'all' and no month filter will apply:\n").lower())
+            month = str(input("Would you like to see data for a specific month? Either type the day name or 'all', meaning no filter will apply:\n").lower())
         while True:
             if month not in valid_month:
                 print("Oops,please review your answer. Eiter type a specific month name(ie.march) or 'all' if no month filter applies.\n")
-                month = str(input("Would you like to see data for a specific month? If yes,type the month name (ie.january).If no month filter applies, type 'all':\n").lower())
+                month = str(input("Would you like to see data for a specific month? Either type the month name or 'all', meaning no filter will apply:\n").lower())
                 continue
             else:
-                day = str(input("Finally,would you like to see data for a specific day? If yes, type the day name (ie.monday). You can also type 'all' and no day filter will apply\n").lower())
+                day = str(input("Finally,would you like to see data for a specific day? Either type the day name or 'all', meaning no filter will apply:\n").lower())
 
             while True:
                 if day not in valid_day:
                     print("Oops,please review your answer. Eiter type a specific day name(ie.monday) or 'all' if no day filter applies.")
-                    day = str(input("Finally,would you like to see data for a specific day? If yes, type the day name (ie.monday). You can also type 'all' and no day filter will apply\n").lower())
+                    day = str(input("Finally,would you like to see data for a specific day? Either type the day name or 'all', meaning no filter will apply:\n").lower())
                     continue
                 else:
                     print("\n***** We are all set!******\nLet'see what we've got for city:{}, month:{} and day:{}".format(city,month,day))
