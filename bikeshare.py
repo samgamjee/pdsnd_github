@@ -188,7 +188,7 @@ def user_stats(df):
 
 def display_raw(df):
     while True:
-        preview_display = input ('Would you like to see a preview? either type "yes" or "no"\n')
+        preview_display = input('Would you like to see a preview? either type "yes" or "no"\n')
         preview_lines = 5
         if preview_display.lower() == 'no':
             print('Ok, got it, let\'s stop here...')
