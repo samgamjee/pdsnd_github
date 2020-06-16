@@ -13,6 +13,9 @@ Project is about:
 bikeshare.py is the main executable and will perform various statistics computation based on user's input
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Used as references for:
+documentation --> https://github.com/udacity/pdsnd_github 
+python --> https://stackoverflow.com/
+
 
 
