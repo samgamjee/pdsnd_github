@@ -126,7 +126,7 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-        # TO DO: display total travel time
+    # TO DO: display total travel time
     total_travel_time = df['Trip Duration'].sum()
     total_travel_time_formatted = pd.to_timedelta(total_travel_time,unit='s')
     print("The total travel time is {}".format(total_travel_time_formatted))
@@ -157,7 +157,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-        # TO DO: Display counts of gender
+    # TO DO: Display counts of gender
     print('\nCalculating User Stats by user gender...\n')
 
     if 'Gender' in df.columns:
@@ -186,6 +186,8 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
+     # TO DO: Add extra comment about new function
 
 def display_raw(df):
     while True:
